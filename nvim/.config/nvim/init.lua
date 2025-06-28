@@ -13,36 +13,8 @@ end
 local rtp = vim.opt.rtp
 rtp:prepend(lazypath)
 
-require('lazy').setup({
-{
-  "nvim-neo-tree/neo-tree.nvim",
-  branch = "v3.x",
-  dependencies = {
-    "nvim-lua/plenary.nvim",
-    "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-    "MunifTanjim/nui.nvim",
-    -- {"3rd/image.nvim", opts = {}}, -- Optional image support in preview window: See `# Preview Mode` for more information
-  },
-  lazy = false, -- neo-tree will lazily load itself
-  ---@module "neo-tree"
-  ---@type neotree.Config?
-  opts = {
-    -- fill any relevant options here
-  },
-},
-{
-  {
-    "catppuccin/nvim",
-    lazy = false,
-    name = "catppuccin",
-    priority = 1000,
-
-    config = function()
-      require("catppuccin").setup({
-        transparent_background = true,
-      })
-      vim.cmd.colorscheme "catppuccin-mocha"
-    end
-  }
+-- Setup plugins
+require('lazy').setup {
+    require 'plugins.neotree',
+    require 'plugins.colortheme'
 }
-})
