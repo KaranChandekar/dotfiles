@@ -45,4 +45,11 @@ return {
     -- GitHub copilot autocompletion
     'github/copilot.vim',
   },
+  {
+    -- autopairs
+    -- https://github.com/windwp/nvim-autopairs
+    'windwp/nvim-autopairs',
+    event = 'InsertEnter',
+    opts = {},
+  },
 }
