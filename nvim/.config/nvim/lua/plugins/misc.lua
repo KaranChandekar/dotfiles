@@ -41,4 +41,8 @@ return {
       require('colorizer').setup()
     end,
   },
+  {
+    -- GitHub copilot autocompletion
+    'github/copilot.vim',
+  },
 }
