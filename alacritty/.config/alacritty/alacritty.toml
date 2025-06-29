@@ -7,7 +7,7 @@ TERM = "xterm-256color"
 
 # Window settings
 [window]
-padding = { x = 10, y = 10 }
+padding = { x = 16 }
 
 # Font configuration
 [font]
