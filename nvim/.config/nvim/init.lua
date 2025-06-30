@@ -27,4 +27,5 @@ require('lazy').setup {
   require 'plugins.git-stuff',
   require 'plugins.alpha',
   require 'plugins.misc',
+  require 'plugins.lazygit',
 }
