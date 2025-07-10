@@ -1,14 +1,18 @@
+-- Load all theme plugin configs
 return {
-  'catppuccin/nvim',
-  lazy = false,
-  name = 'catppuccin',
-  priority = 1000,
-
-  config = function()
-    require('catppuccin').setup {
-      flavour = 'mocha', -- latte, frappe, macchiato, mocha
-      transparent_background = true,
-    }
-    vim.cmd.colorscheme 'catppuccin'
-  end,
+  require 'plugins.colorthemes.catppuccin',
+  -- require('plugins.colorthemes.tokyonight'),
+  -- require('plugins.colorthemes.kanagawa'),
+  -- require('plugins.colorthemes.nord'),
+  -- require('plugins.colorthemes.nightfox'),
+  -- require('plugins.colorthemes.everforest'),
+  -- require('plugins.colorthemes.gruvbox'),
+  -- Set colorscheme here
+  {
+    'LazyVim/LazyVim',
+    priority = 1001,
+    config = function()
+      vim.cmd.colorscheme 'catppuccin' -- change to your preferred theme
+    end,
+  },
 }

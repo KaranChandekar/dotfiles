@@ -28,4 +28,5 @@ require('lazy').setup {
   require 'plugins.alpha',
   require 'plugins.misc',
   require 'plugins.lazygit',
+  require 'plugins.indent-blankline',
 }
