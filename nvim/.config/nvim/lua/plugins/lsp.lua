@@ -15,6 +15,15 @@ return {
     'hrsh7th/cmp-nvim-lsp',
   },
   config = function()
+    -- Configure diagnostics to show inline
+    vim.diagnostic.config {
+      virtual_text = true, -- Show inline diagnostics
+      signs = true, -- Show signs in the sign column
+      underline = true, -- Underline the text with diagnostic
+      update_in_insert = false, -- Don't update diagnostics while in insert mode
+      severity_sort = true, -- Sort diagnostics by severity
+    }
+
     -- Brief aside: **What is LSP?**
     --
     -- LSP is an initialism you've probably heard, but might not understand what it is.
