@@ -29,4 +29,5 @@ require('lazy').setup {
   require 'plugins.misc',
   require 'plugins.lazygit',
   require 'plugins.indent-blankline',
+  require 'plugins.markdown-preview',
 }
