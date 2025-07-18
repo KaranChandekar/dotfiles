@@ -4,7 +4,7 @@
   "modules-center": ["clock"],
   "modules-right": ["cpu", "network", "pulseaudio", "battery"],
   "clock": {
-    "format": "<span foreground='#f5c2e7'>   </span>{:%a %d %H:%M}",
+    "format": "<span foreground='#f5c2e7'></span>{:%a %d      %I:%M %p}",
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>"
   },
   "battery": {
@@ -30,16 +30,21 @@
     "tooltip-format-wifi": "Signal Strenght: {signalStrength}%"
   },
   "pulseaudio": {
-      "format": "{icon}  {volume}%",
-      "format-muted": "",
-      "format-icons": {
-          "default": ["", "", " "]
-      },
-      "on-click": "pavucontrol"
+    "format": "{icon}  {volume}%",
+    "format-muted": "",
+    "format-icons": {
+      "default": ["", "", " "]
+    },
+    "on-click": "pavucontrol"
   },
   "cpu": {
-    "format": "<span size='13000' foreground='#f5c2e7'> </span>{usage}%",
-    "tooltip-format": "<big>CPU Usage</big>\n<tt><small>{usage}%</small></tt>",
-    "format-icons": ["", "", "", "", ""]
+    "interval": 2,
+    "format": "   {usage}%",
+    "format-alt": "   {avg_frequency} GHz",
+    "tooltip-format": "CPU Usage: {usage}%\nAverage Frequency: {avg_frequency} GHz",
+    "states": {
+      "warning": 70,
+      "critical": 90
+    }
   }
 }
