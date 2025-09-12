@@ -1,7 +1,7 @@
 export EDITOR="nvim"
 export SUDO_EDITOR="$EDITOR"
 export PGHOST="/var/run/postgresql"
-
+export PATH="$HOME/.cargo/bin:$PATH"
 export PATH=$PATH:/usr/local/go/bin
 
 HISTFILE=~/.history
@@ -42,10 +42,6 @@ function y() {
 
 # Eza alias for listing files
 alias ls="eza --color=always --icons --git --group-directories-first --long --no-time --no-user --no-permissions --no-filesize"
-
-# TheFuck alias
-eval "$(thefuck --alias)"
-eval "$(thefuck --alias fk)"
 
 # Zoxide
 eval "$(zoxide init zsh)"

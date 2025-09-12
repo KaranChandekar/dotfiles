@@ -30,4 +30,5 @@ require('lazy').setup {
   require 'plugins.lazygit',
   require 'plugins.indent-blankline',
   require 'plugins.markdown-preview',
+  require 'plugins.copilot',
 }

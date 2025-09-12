@@ -1,0 +1,34 @@
+# Window appearance
+width = 300
+height = 200
+border-width = 2
+outline-width = 0
+corner-radius = 10
+background-color = #1e1e2e
+border-color = #89b4fa
+text-color = #cdd6f4
+selection-color = #89b4fa
+selection-background = #313244
+
+# Font
+font = JetBrains Mono
+font-size = 12
+
+# Positioning
+anchor = center
+exclusive-zone = -1
+
+# Behavior
+hide-cursor = true
+history = false
+fuzzy-match = false
+
+# Prompt
+prompt-text = "Power: "
+prompt-color = #f9e2af
+
+# Layout
+num-results = 5
+result-spacing = 10
+horizontal = false
+EOF

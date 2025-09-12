@@ -28,7 +28,8 @@
         "sway/language",
         "battery",
         // "clock",
-        "tray"
+        "tray",
+        "custom/power"
     ],
     // Modules configuration
     // "sway/workspaces": {
@@ -165,12 +166,15 @@
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
-        "format-wifi": "{essid} ({signalStrength}%) ",
-        "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
-        "format-linked": "{ifname} (No IP) ",
+        "format-wifi": "{essid} ({signalStrength}%) ",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{ifname} via {gwaddr} ",
+        "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}"
+        // "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        "on-click": "~/.local/bin/rofi-wifi-menu.sh"
+        // "on-click-right": "nm-connection-editor",
+        // "on-click-middle": "nmcli radio wifi off && sleep 2 && nmcli radio wifi on"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
@@ -204,15 +208,6 @@
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     },
     "custom/power": {
-        "format" : "⏻ ",
-        "tooltip": false,
-        "menu": "on-click",
-        "menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-        "menu-actions": {
-            "shutdown": "shutdown",
-            "reboot": "reboot",
-            "suspend": "systemctl suspend",
-            "hibernate": "systemctl hibernate"
-        }
-    }
-}
+        "format" : " ⏻ ",
+        "on-click": "~/.local/bin/powermenu.sh"
+    }}
