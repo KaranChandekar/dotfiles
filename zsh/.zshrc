@@ -113,23 +113,6 @@ source $ZSH/oh-my-zsh.sh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-echo '[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom' >> ~/dotfiles/zsh/.zshrc
+# Source custom configuration if it exists
 [[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
-[[ -f ~/.zshrc.custom ]] && source ~/.zshrc.custom
+

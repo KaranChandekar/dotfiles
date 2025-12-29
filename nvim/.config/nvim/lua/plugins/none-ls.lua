@@ -17,7 +17,7 @@ return {
         'eslint_d',               -- ts/js linter
         'shfmt',                  -- Shell formatter
         'checkmake',              -- linter for Makefiles
-        'ruff',                   -- Python linter and formatter
+        -- 'ruff',                   -- Python linter and formatter
         'prisma-language-server', -- Prisma linter and formatter
         'terraform-ls',           -- Terraform linter and formatter
         'taplo',                  -- toml formatter

@@ -4,7 +4,7 @@
   font-family:
     "JetBrainsMono Nerd Font Propo Bold", "Noto Sans Mono",
     "Font Awesome 6 Free", "Font Awesome 6 Brands", monospace;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: bold;
 }
 
@@ -101,6 +101,7 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-media,
+#custom-power,
 #tray,
 #mode,
 #idle_inhibitor,
@@ -259,6 +260,12 @@ label:focus {
 }
 
 #custom-media.custom-spotify {
+  /* background-color: #66cc99; */
+  background-color: @crust;
+  color: #66cc99;
+}
+
+#custom-power {
   /* background-color: #66cc99; */
   background-color: @crust;
   color: #66cc99;
